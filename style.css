@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* 背景颜色 */
+}
+
+.container {
+    max-width: 600px; /* 最大宽度 */
+    margin: 50px auto; /* 居中 */
+    padding: 20px; /* 内边距 */
+    background-color: white; /* 容器背景颜色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+h1 {
+    color: #007BFF; /* 标题颜色 */
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px); /* 100% 宽度减去内边距和边框 */
+    border: 2px solid #007BFF; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    transition: border-color 0.3s; /* 过渡效果 */
+    box-sizing: border-box; /* 包含内边距和边框在宽度计算内 */
+}
+
+input:focus {
+    border-color: #0056b3; /* 聚焦时边框颜色 */
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px; /* 上方间距 */
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 5px; /* 圆角按钮 */
+    cursor: pointer; /* 鼠标指针样式 */
+    transition: background-color 0.3s; /* 过渡效果 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 悬停时按钮背景颜色 */
+}
+
+p {
+    margin-top: 20px; /* 段落上方间距 */
+    font-size: 18px; /* 字体大小 */
+    color: #333; /* 字体颜色 */
+}
+
+.note {
+    margin-top: 20px; /* 上方间距 */
+    font-size: 16px; /* 字体大小 */
+    color: #555; /* 字体颜色 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; /* 减少边距 */
+        padding: 15px; /* 减少内边距 */
+        color: red; /* 更改为你想要的颜色 */
+    }
+
+    h1 {
+        font-size: 24px; /* 调整标题字体大小 */
+    }
+
+    input, button {
+        width: 100%; /* 输入框和按钮宽度100% */
+        margin-top: 5px; /* 减少间距 */
+    }
+
+    p {
+        font-size: 16px; /* 调整段落字体大小 */
+    }
+
+    .note {
+        font-size: 14px; /* 调整提示字体大小 */
+    }
+
+    .container h1 {
+        color: red !important; /* 使用 !important 确保优先级 */
+    }
+}

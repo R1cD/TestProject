@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间戳转换工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+         <h1>时间戳转换工具</h1>
+         <input type="text" id="input" placeholder="输入时间戳或时间 (如: 2023-10-01)">
+         <button id="convertBtn">转换</button>
+         <p id="result"></p >
+    
+         <p class="note">请注意：</p >
+         <div class="note">
+            <p>时间戳应为数字，例如：1633046400000</p >
+            <p>时间格式应为：ISO 8601（如：2023-10-01T12:00:00）或常见日期格式（如：10/01/2023）</p >
+            <p>无效的输入将返回“无效的时间”</p >
+         </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
